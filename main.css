@@ -1,0 +1,146 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand';
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+    
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+    margin-bottom: 8px;
+}
+
+.container h6 {
+    padding: 9px;
+}
+
+.container input, button {
+    padding: 8px;
+    border-radius: 8px;
+    text-decoration: none;
+    
+}
+
+.discografia, section, h2 {
+    margin-bottom: 56px;
+    background-image: linear-gradient(to bottom right, rgb(202, 123, 27), white);
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+header {
+    padding: 16px 0 0;
+    border-bottom: 16px solid silver;
+    box-shadow: 0 0 10px 5px rgba(192, 192, 192, 0.8);
+    background-image: linear-gradient(to bottom right, rgb(202, 123, 27), white);
+    margin-bottom: 56px;
+
+}
+
+.submenu {
+    display: none;
+    background-color: #decc73d1;
+    position: absolute;
+    left: 0;
+    top: 50px;
+    max-width: 300%;
+    justify-content: space-between;
+    text-decoration: none;
+    
+}
+
+.menu > li {
+    float: left;
+    list-style: none;
+    padding: 16px;
+    border-top: 1px solid silver;
+    position: relative;
+}
+
+.menu li {
+    text-decoration: none;
+}
+
+.clear {
+    clear: both;
+}
+
+.menu li:hover .submenu {
+    display: flex;
+    padding: 8px auto;
+    text-decoration: none;
+    
+}
+
+
+
+.submenu li {
+    display: inline;
+    padding: 8px;
+    text-decoration: none;
+}
+
+section h2 {
+    padding: 8px;
+}
+
+section img {
+    width: 320px;
+    height: 160pxpx;
+}
+
+.conteudo a, h3 {
+    text-decoration: none;
+    padding: 8px;
+    font-style: italic;
+    
+}
+
+.produtos a {
+    margin-right: 10px;
+}
+
+.conteudo {
+    display: grid;
+    grid-template-columns: auto;
+}
+
+.destaque .sobre a {
+    display: flex;
+    font-size: 1em;
+    font-style: italic;
+}
+
+.destaque .noticia img {
+    margin-right: 16px;
+}
+
+.produtos {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+
+footer {
+    background-color: #decc73d1
+    padding: 20px 0;
+    text-align: center;
+}
+
+copy {
+    font-size: 16px;
+    color: #555;
+}
