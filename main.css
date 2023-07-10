@@ -7,7 +7,7 @@
 
 .container {
     max-width: 1024px;
-    width: 100%;
+    width: 100vw;
     margin: 0 auto;
     
 }
@@ -87,7 +87,6 @@ header {
 }
 
 
-
 .submenu li {
     display: inline;
     padding: 8px;
@@ -100,19 +99,19 @@ section h2 {
 
 section img {
     width: 320px;
-    height: 160pxpx;
+    height: 320px;
 }
 
 .conteudo a, h3 {
     text-decoration: none;
     padding: 8px;
     font-style: italic;
-    
 }
 
 .produtos a {
     margin-right: 10px;
 }
+
 
 .conteudo {
     display: grid;
@@ -121,8 +120,9 @@ section img {
 
 .destaque .sobre a {
     display: flex;
-    font-size: 1em;
-    font-style: italic;
+    font-size: 9px;
+    color: black;
+    
 }
 
 .destaque .noticia img {
@@ -132,15 +132,43 @@ section img {
 .produtos {
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
+    
 }
 
 footer {
-    background-color: #decc73d1
+    background-color: #decc73d1;
     padding: 20px 0;
-    text-align: center;
+    text-align:center;
 }
 
 copy {
     font-size: 16px;
     color: #555;
 }
+
+.produtos {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.produto {
+    width: 50%;
+}
+
+.produto h3 {
+    color: black;
+}
+
+@media screen and (max-width: 1024px) {
+    .produto {
+        width: 50%;
+    }
+    
+}
+
+@media screen and (max-width: 667px) {
+    .produto {
+        width: 100%;
+    }
+}
+
